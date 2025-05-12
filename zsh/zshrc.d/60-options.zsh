@@ -1,0 +1,5 @@
+setopt AUTO_CD
+setopt CDABLE_VARS
+setopt CORRECT
+setopt NO_FLOW_CONTROL
+setopt RM_STAR_SILENT

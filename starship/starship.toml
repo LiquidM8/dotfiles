@@ -1,0 +1,147 @@
+palette = "neon_purple"
+
+format = """
+[░▒▓](crust)\
+$os\
+[](bg:neon_green fg:crust)\
+$directory\
+[ ](fg:neon_green bg:surface0)\
+$git_branch\
+$git_status\
+$hg_branch\
+[ ](fg:surface0 bg:crust)\
+[▓▒░](crust)\
+[ ◦•](surface2)\
+$fill\
+[•◦ ](surface2)\
+[░▒▓](crust)\
+[ ](fg:surface0 bg:crust)\
+$status\
+$cmd_duration\
+[ ](fg:crust bg:surface0)\
+$battery\
+[▓▒░](crust)
+[·](surface0)\
+[·](surface2)\
+[•](neon_green)\
+[ ](neon_green)\
+"""
+
+[fill]
+symbol = "·"
+style = "surface2"
+
+[directory]
+style = "fg:crust bg:neon_green"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"~" = "  "
+"Applications" = "  "
+"Desktop" = "  "
+"Developer" = "  "
+"Documents" = " 󰈙 "
+"Downloads" = "  "
+"Games" = "  "
+"GitHub" = "  "
+"Library" = "  "
+"Movies" = "  "
+"Music" = "  "
+"Pictures" = "  "
+"Projects" = "  "
+"Public" = "  "
+"Screenshots" = " 󱣴 "
+"Videos" = "  "
+"Thunderbird" = "  "
+"source" = " 󰈹 "
+"comm" = "  "
+
+[git_branch]
+symbol = " "
+style = "fg:neon_green bg:surface0"
+format = "[$symbol$branch]($style)"
+
+[git_status]
+style = "fg:neon_green bg:surface0"
+format = "([$all_status$ahead_behind]($style))"
+
+[hg_branch]
+disabled = false
+symbol = ""
+style = "bg:surface0 fg:neon_green"
+format = '[[ $symbol $branch ]($style)]'
+
+[cmd_duration]
+disabled = false
+min_time = 0
+show_milliseconds = true
+style = "fg:text bg:surface0"
+format = '[$duration]($style)'
+
+[status]
+symbol = '  '
+success_symbol = '  '
+not_executable_symbol = '  '
+not_found_symbol = '  '
+map_symbol = true
+disabled = false
+style = 'fg:neon_green bg:surface0'
+format = '[$symbol]($style)'
+
+[battery]
+disabled = false
+full_symbol = ''
+charging_symbol = '⚡️'
+discharging_symbol = ''
+unknown_symbol = ''
+empty_symbol = ''
+format = '[[ $symbol $percentage ](fg:neon_teal bg:crust)]'
+
+[[battery.display]]
+threshold = 25
+discharging_symbol = ''
+style = 'fg:neon_yellow bg:crust'
+
+[[battery.display]]
+threshold = 10
+discharging_symbol = ''
+style = 'fg:red bg:crust'
+
+[[battery.display]]
+threshold = 5
+discharging_symbol = ''
+style = 'bold fg:red bg:crust'
+
+[os]
+format = '[ $symbol]($style)'
+style = 'fg:neon_green bg:crust'
+disabled = false
+
+[os.symbols]
+Arch = " "
+Debian = " "
+Fedora = " "
+FreeBSD = " "
+Linux = " "
+Macos = " "
+NixOS = "󱄅 "
+Pop = " "
+Raspbian = " "
+Ubuntu = " "
+Unknown = " "
+
+# ⚓️ Neon Purple Palette
+[palettes.neon_purple]
+deep_purple = "#a06cd5"
+neon_green = "#39ff14"
+neon_teal = "#00fff7"
+neon_yellow = "#fafa33"
+text = "#e0e0e0"
+dim = "#8c8c8c"
+crust = "#1a132b"
+surface0 = "#221b33"
+surface1 = "#2c2344"
+surface2 = "#362c55"
+lavender = "#a680ff"

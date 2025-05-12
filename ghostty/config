@@ -1,0 +1,18 @@
+# Font settings
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+
+# Theme
+theme = "deep"
+background-opacity = 0.8
+
+# Cursor appearance
+cursor-style = block
+cursor-style-blink = true
+
+# Window padding
+window-padding-x = 10
+window-padding-y = 10
+
+# Shell
+command = "/usr/bin/zsh"

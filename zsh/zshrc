@@ -1,0 +1,7 @@
+# Source global system-wide Zsh configuration
+[[ -f /etc/zshrc ]] && source /etc/zshrc
+
+# Source user-defined modular config files
+zsh_d="$HOME/.dotfiles/zsh/zshrc.d"
+[[ -d "$zsh_d" ]] && for rc in $zsh_d/*(.N); do source "$rc"; done
+unset rc zsh_d
