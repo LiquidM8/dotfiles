@@ -15,8 +15,9 @@ fi
 
 # Create symlinks (edit this list based on your actual files)
 declare -A FILES_TO_LINK=(
-    ["$CLONE_DIR/zsh/.zshrc"]="$HOME/.zshrc"
-    ["$CLONE_DIR/tmux/.tmux.conf"]="$HOME/.tmux.conf"
+    ["$CLONE_DIR/zsh/zshrc"]="$HOME/.zshrc"
+    ["$CLONE_DIR/tmux/tmux.conf"]="$HOME/.tmux.conf"
+    ["$CLONE_DIR/ghostty/config"]="$HOME/.config/ghostty/config"
 )
 
 echo "Linking dotfiles..."
