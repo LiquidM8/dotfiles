@@ -10,8 +10,8 @@ fi
 # Wrap ssh to fix TERM when inside tmux
 ssh() {
   if [[ -n "$TMUX" ]]; then
-    env TERM=xterm command ssh "$@"
+    TERM=xterm /usr/bin/ssh "$@"
   else
-    command ssh "$@"
+    /usr/bin/ssh "$@"
   fi
 }
