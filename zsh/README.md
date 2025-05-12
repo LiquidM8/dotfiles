@@ -7,6 +7,7 @@ This directory contains modular `.zsh` configuration files, loaded in order base
 | File                | Purpose                                |
 |---------------------|----------------------------------------|
 | 00-global.zsh       | Global shell options (e.g. globbing)   |
+| 05-env.zsh          | Enviremental Configurations
 | 10-path.zsh         | Modify `$PATH`                         |
 | 15-wrappers.zsh     | TMUX-aware `TERM` export and `ssh()`   |
 | 20-keychain.zsh     | Load SSH keys with keychain            |
