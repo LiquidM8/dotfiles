@@ -1,5 +1,7 @@
 *.swp
 *.bak
 *.log
-.cache/
 *.DS_Store
+
+.config/
+$HOME/.dotfiles/zsh/cache/
