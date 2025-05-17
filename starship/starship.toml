@@ -19,12 +19,6 @@ $fill\
 $status\
 $cmd_duration\
 [ ](fg:crust bg:surface0)\
-$battery\
-[▓▒░](crust)
-[·](surface0)\
-[·](surface2)\
-[•](neon_green)\
-[ ](neon_green)\
 """
 
 [fill]
@@ -89,30 +83,6 @@ map_symbol = true
 disabled = false
 style = 'fg:neon_green bg:surface0'
 format = '[$symbol]($style)'
-
-[battery]
-disabled = false
-full_symbol = ''
-charging_symbol = '⚡️'
-discharging_symbol = ''
-unknown_symbol = ''
-empty_symbol = ''
-format = '[[ $symbol $percentage ](fg:neon_teal bg:crust)]'
-
-[[battery.display]]
-threshold = 25
-discharging_symbol = ''
-style = 'fg:neon_yellow bg:crust'
-
-[[battery.display]]
-threshold = 10
-discharging_symbol = ''
-style = 'fg:red bg:crust'
-
-[[battery.display]]
-threshold = 5
-discharging_symbol = ''
-style = 'bold fg:red bg:crust'
 
 [os]
 format = '[ $symbol]($style)'

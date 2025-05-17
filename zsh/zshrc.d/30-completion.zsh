@@ -1,7 +1,7 @@
 autoload -Uz compinit
 zmodload zsh/complist
 
-comp_cache="$HOME/.dotfiles/zsh/cache/zcompdump"
+comp_cache="$HOME/.cache/zsh/zcompdump"
 if [[ ! -f $comp_cache ]]; then
     compinit
 else
