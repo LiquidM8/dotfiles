@@ -1,7 +1,0 @@
-name: work
-root: ~
-
-windows:
-  - Main:
-  - CH:
-  - SSH:
