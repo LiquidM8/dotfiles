@@ -13,6 +13,3 @@ cursor-style-blink = true
 # Window padding
 window-padding-x = 10
 window-padding-y = 10
-
-# Shell
-#command = "/usr/bin/zsh"
