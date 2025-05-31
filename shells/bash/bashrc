@@ -24,7 +24,9 @@ alias grep='grep --color=auto'
 alias ll='ls -lah'
 alias la='ls -A'
 alias l='ls -CF'
+
 alias CH='ssh 208.85.0.1 -p 2222 -i $HOME/.ssh/id_ed25519_github'
+alias dots='cd $HOME/.dotfiles/'
 
 # Enable programmable completion features (if not already enabled)
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
