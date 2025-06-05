@@ -25,8 +25,18 @@ alias ll='ls -lah'
 alias la='ls -A'
 alias l='ls -CF'
 
-alias CH='ssh 208.85.0.1 -p 2222 -i $HOME/.ssh/id_ed25519_github'
-alias dots='cd $HOME/.dotfiles/'
+#alias CH='ssh 208.85.0.1 -p 2222 -i $HOME/.ssh/id_ed25519_github'
+alias CH='ssh 208.85.0.1 -p 2222'
+alias NULLR='ssh null-router.hivelocity.net'
+alias dots='cd $HOME/.dots/'
+alias work='tmuxinator start work'
+alias works='tmuxinator stop work'
+alias pystart='source ~/Documents/Scripts/.venv/bin/activate'
+alias pystop='deactivate'
+alias legacy-start='sudo docker start legacy-ssh'
+alias legacy-connect='sudo docker exec -it legacy-ssh bash'
+alias legacy-stop='sudo docker stop legacy-ssh'
+alias serial='sudo picocom -b 9600 /dev/ttyUSB0'
 
 # Enable programmable completion features (if not already enabled)
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
@@ -38,7 +48,7 @@ fi
 
 # SSH Keychain (Optional if using Keychain for SSH agent)
 if command -v keychain &>/dev/null; then
-    eval "$(keychain --quiet --eval id_ed25519_github)"
+    eval "$(keychain --quiet --eval master)"
 fi
 
 # Source additional config files if needed
