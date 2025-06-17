@@ -2,6 +2,6 @@
 *.bak
 *.log
 *.DS_Store
-
+/nvim/lazy-lock.json
 .config/
 $HOME/.dotfiles/zsh/cache/

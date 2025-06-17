@@ -64,30 +64,6 @@ export PS1="%F{39}%B󰣇%b%f %1~: "
 setopt prompt_subst
 aws_prompt_info() { echo ""; }
 
-
-# Aliases
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
-alias ll='ls -lah'
-alias la='ls -A'
-alias l='ls -CF'
-alias c='clear'
-alias CH='ssh 208.85.0.1 -p 2222'
-alias NULLR='ssh null-router.hivelocity.net'
-alias dots='cd $HOME/.dots/'
-alias work='tmuxinator start work'
-alias works='tmuxinator stop work'
-alias pystart='source ~/Documents/Scripts/.global_venv/bin/activate'
-alias pystop='deactivate'
-alias legacy-start='sudo docker start legacy-ssh'
-alias legacy-connect='sudo docker exec -it legacy-ssh bash'
-alias legacy-stop='sudo docker stop legacy-ssh'
-
-# SSH Keychain (Optional if using Keychain for SSH agent)
-if command -v keychain &>/dev/null; then
-    eval "$(keychain --quiet --eval master noc)"
-fi
-
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
