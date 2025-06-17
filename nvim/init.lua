@@ -16,3 +16,29 @@ require("options")
 require("keymaps")
 require("plugins")
 
+vim.lsp.enable({
+	"pyright",
+})
+vim.diagnostic.config({
+	virtual_text = false,
+	virtual_line = false,
+	underline = true,
+	update_in_insert = false,
+	severity_sort = true,
+	float = {
+		border = "rounded",
+		source = true,
+	},
+	signs = {
+		text = {
+			[vim.diagnostic.severity.ERROR] = "",
+			[vim.diagnostic.severity.WARN] = "󰔷",
+			[vim.diagnostic.severity.INFO] = "",
+			[vim.diagnostic.severity.HINT] = "",
+		},
+	},
+	numhl = {
+		[vim.diagnostic.severity.ERROR] = "ErrorMsg",
+		[vim.diagnostic.severity.WARN] = "WarningMsg",
+	},
+})

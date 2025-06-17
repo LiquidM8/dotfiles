@@ -10,6 +10,13 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Python Envirment
+#VENV="$HOME/Documents/Scripts/.venv"
+#source "$VENV/bin/activate"
+
+# Term
+export TERM=xterm-256color
+
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -70,7 +77,7 @@ alias NULLR='ssh null-router.hivelocity.net'
 alias dots='cd $HOME/.dots/'
 alias work='tmuxinator start work'
 alias works='tmuxinator stop work'
-alias pystart='source ~/Documents/Scripts/.venv/bin/activate'
+alias pystart='source ~/Documents/Scripts/.global_venv/bin/activate'
 alias pystop='deactivate'
 alias legacy-start='sudo docker start legacy-ssh'
 alias legacy-connect='sudo docker exec -it legacy-ssh bash'
@@ -83,4 +90,4 @@ fi
 
 # Shell integrations
 eval "$(fzf --zsh)"
-#eval "$(zoxide init --cmd cd zsh)"
+eval "$(zoxide init --cmd cd zsh)"

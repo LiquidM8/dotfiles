@@ -18,7 +18,9 @@ require("lazy").setup({
     dependencies = { "williamboman/mason.nvim" },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "lua_ls" }
+        ensure_installed = { "lua_ls" },
+        install_root_dir = vim.fn.expand('$HOME/.local/share/nvim/mason/bin'),
+		path = "append"
       })
     end
   },
