@@ -1,18 +1,19 @@
-# Shell
-shell-integration = zsh
+# Theme
+theme = light:Earthsong, dark:Duotone-Dark
 
-# Font settings
-font-family = "JetBrainsMono Nerd Font"
+# Background
+background-opacity = 0.6
+background-blur = true
+
+# Fonts
+font-family = "JetBrainsMono Nerd Font Mono"
 font-size = 14
 
-# Theme
-theme = "deep"
-background-opacity = 0.8
-
-# Cursor appearance
-cursor-style = block
+# Cursor
+cursor-style = block_hollow
 cursor-style-blink = true
+mouse-hide-while-typing = true
 
-# Window padding
-window-padding-x = 10
-window-padding-y = 10
+# Window
+window-padding-x = 2
+window-padding-y = 2
