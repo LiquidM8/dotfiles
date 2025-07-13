@@ -75,7 +75,10 @@ if ok_lspconfig then
     capabilities = capabilities,
     settings = {
       Lua = {
-        diagnostics = { globals = { "vim" } },
+        diagnostics = {
+            globals = { "vim" },
+            disable = { "duplicate-set-field" },
+        },
         telemetry   = { enable = false },
         format      = { enable = true },
       },

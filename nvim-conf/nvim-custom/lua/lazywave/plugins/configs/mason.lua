@@ -11,7 +11,26 @@ require('mason').setup({
 
 -- Mason LSP and NVIM LSP Config
 require('mason-lspconfig').setup({
-    ensured_installed = {},
+    ensured_installed = {
+        "black",
+        "debugpy",
+        "lua_ls",
+        "luacheck",
+        "pylint",
+        "pyright",
+        "shfmt",
+        "stylua"
+    },
+    automatic_enable = {
+        "black",
+        "debugpy",
+        "lua_ls",
+        "luacheck",
+        "pylint",
+        "pyright",
+        "shfmt",
+        "stylua"
+    },
     handlers = {
         function(server_name)
             require('lspconfig')[server_name].setup({
