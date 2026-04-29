@@ -1,0 +1,5 @@
+# Ghostty Configuration
+background-opacity = 0.6
+
+# Blur
+background-blur = true
